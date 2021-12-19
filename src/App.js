@@ -10,31 +10,49 @@ function App() {
       no:1,
       title:"Tesla Cyber Truck",
       price:150000,
-      photo:"http://placehold.it/300x300?text=tesla"
+      
     },
     {
       no:2,
       title:"Tesla Car",
       price:100000,
-      photo:"http://placehold.it/300x300?text=tesla"
+    
     },
     {
       no:3,
       title:"Starlink",
       price:1000,
-      photo:"http://placehold.it/300x300?text=tesla"
+     
+    },
+    {
+      no:4,
+      title:"Star Toy",
+      price:100,
+      
+    },
+    {
+      no:5,
+      title:"Car Toy",
+      price:700,
+     
+    },
+    {
+      no:5,
+      title:"Bike",
+      price:800,
+     
     }
   ])  
   const [cartItem, setCartItem] = useState([])
-  //const [final,setFinal]=useState(0)
+  
   let hand = (pro) => 
   {
     setCartItem([...cartItem,pro])
-    // setFinal(final + pro.price)
+    
   }
   
   let delect=(cadDelect) =>{
-    // setFinal(final - cadDelect.price)
+    
     let close=cartItem.filter(objj => objj.no !== cadDelect.no)
     setCartItem([...close])
   }
